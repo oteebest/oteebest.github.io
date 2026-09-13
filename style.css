@@ -674,6 +674,12 @@ h1 {
 
 .stack-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
+.timeline-subproject {
+  margin-top: 1.1rem;
+  padding-top: 1.1rem;
+  border-top: 1px dashed var(--border);
+}
+
 /* ===== BADGES ===== */
 .badge {
   display: inline-flex;

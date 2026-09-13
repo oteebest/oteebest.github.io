@@ -303,6 +303,27 @@
               <span class="tag tag-sm">Railway</span>
               <span class="tag tag-sm">Vercel</span>
             </div>
+            <div class="timeline-subproject">
+              <p class="timeline-context">
+                NaijaTax AI &mdash; RAG-based Nigerian tax research assistant, live at
+                <a href="https://naijatax.ai" target="_blank" rel="noopener noreferrer">naijatax.ai</a>
+              </p>
+              <ul class="timeline-bullets">
+                <li>Built a full RAG pipeline over Nigeria's 2025 Tax Act &amp; Tax Administration Act corpus (595 chunks, pgvector cosine similarity).</li>
+                <li>Provisioned production AWS infrastructure via CDK &mdash; two-AZ VPC, ECS Fargate, RDS Postgres 17 + pgvector, ALB/HTTPS, CloudFront + S3.</li>
+                <li>Implemented confidence-gated retrieval and deterministic citation formatting to reduce hallucination and unsupported citations.</li>
+                <li>Built IP-partitioned rate limiting middleware, architected for authenticated-tier scaling.</li>
+              </ul>
+              <div class="stack-tags">
+                <span class="tag tag-sm">.NET 9</span>
+                <span class="tag tag-sm">ASP.NET Core</span>
+                <span class="tag tag-sm">Next.js 14</span>
+                <span class="tag tag-sm">PostgreSQL + pgvector</span>
+                <span class="tag tag-sm">OpenAI GPT-4o</span>
+                <span class="tag tag-sm">AWS CDK</span>
+                <span class="tag tag-sm">Azure Document Intelligence</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -564,25 +585,30 @@
             <div class="project-title-row">
               <h3>NaijaTax.ai</h3>
               <div class="project-badges">
-                <span class="badge badge-yellow">In Development</span>
+                <span class="badge badge-green">Live</span>
               </div>
             </div>
+            <a href="https://naijatax.ai" target="_blank" rel="noopener noreferrer" class="project-link">
+              naijatax.ai &#8599;
+            </a>
           </div>
           <p class="project-description">
-            LLM-powered tax advisory tool for the Nigerian market. Combining domain-specific fine-tuning and RAG architecture to deliver accurate answers to FIRS and state tax queries for individuals and SMEs.
+            RAG-based Nigerian tax research assistant, live at naijatax.ai. Built under Zipa Digital Solutions Limited &mdash; a full retrieval-augmented generation pipeline over Nigeria's 2025 Tax Act and Tax Administration Act corpus, deployed on production AWS infrastructure.
           </p>
           <ul class="project-highlights">
-            <li>RAG architecture over Nigerian tax legislation corpus</li>
-            <li>Domain-specific fine-tuning for FIRS &amp; state tax rules</li>
-            <li>Conversational interface with cited, verifiable responses</li>
-            <li>Targeted at individuals and SMEs in the Nigerian market</li>
+            <li>RAG pipeline over a 595-chunk Nigerian tax corpus (pgvector cosine similarity)</li>
+            <li>Production AWS infrastructure via CDK &mdash; ECS Fargate, RDS Postgres 17, CloudFront + S3</li>
+            <li>Confidence-gated retrieval &amp; deterministic citations to reduce hallucination</li>
+            <li>IP-partitioned rate limiting middleware</li>
           </ul>
           <div class="stack-tags">
-            <span class="tag tag-sm">LLM</span>
-            <span class="tag tag-sm">RAG</span>
-            <span class="tag tag-sm">Fine-tuning</span>
-            <span class="tag tag-sm">.NET</span>
-            <span class="tag tag-sm">AI/ML</span>
+            <span class="tag tag-sm">.NET 9</span>
+            <span class="tag tag-sm">ASP.NET Core</span>
+            <span class="tag tag-sm">Next.js 14</span>
+            <span class="tag tag-sm">PostgreSQL + pgvector</span>
+            <span class="tag tag-sm">OpenAI GPT-4o</span>
+            <span class="tag tag-sm">AWS CDK</span>
+            <span class="tag tag-sm">Azure Document Intelligence</span>
           </div>
         </div>
 
